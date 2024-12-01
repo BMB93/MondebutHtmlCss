@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Accueil</title>
+    <!-- Lien de Bootstrap css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--  Ma/mes propres css liens -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--la section pour les icons depuis le site www.fontawesome.com -->
+    <script src="https://kit.fontawesome.com/d44910497e.js" crossorigin="anonymous"></script>
+
+    <!-- Javascript from Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</head>
+
+<!--Google font Montserrat -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+<body>
+
+    <!-- Dans cette section il y a la barre d'entete-->
+    <div class="baradresse">
+        <ul>
+            <li> <img class="img1" src="img/location.png" alt="symbole de location"> </li>
+            <li>
+                <p> Bois patate, ruelle cameau #423 </p>
+            </li>
+            <li> <img class="img1" src="img/telephone.png" alt="symbole de tlf"> </li>
+            <li>
+                <p> (+509) 3454-6532 / 4265-7382 </p>
+            </li>
+            <li> <img class="img1" src="img/email.png" alt="symbole boite email"> </li>
+            <li> <a href="mailto:reception@cppe.com"> reception@cppe </a></li>
+        </ul>
+    </div>
+    <!-- Dans cette section il y a la barre de logo et de connexion-->
+
+
+    <div class="conteneur-flexible ligne">
+
+        <div class="icon-cppe"><img class="logo" src="img/logo cppe.png" alt="le logo"></div>
+        <div class="icon-cppe">
+            <p class="cppe"> <strong>CPPE</strong> <br> Centre Pilote de <br> Petion Estinvil</p>
+        </div>
+
+        <div class="btn"> <a class="connect" href="#">Se connecter</a></div>
+        <div class="btn"><a class="subscribe" href="admission.html">S'inscrire</a></div>
+
+    </div>
+
+
+    <!-- Dans cette section il y a la barre de navigation-->
+
+    <nav>
+        <ul>
+            <li> <a href="index.html"> Accueil </a> </li>
+            <li> <a href="admission.html">Admission </a> </li>
+            <li class="defilement"> <a href="#">Gallerie &ensp;</a>
+                <ul class="sous">
+                    <li><a href="#"> Etudiant IT</a></li>
+                    <li><a href="#">Etudiant Mecanique </a> </li>
+                    <li><a href="#"> Etudiant Plomberie </a> </li>
+                    <li><a href="#"> Etudiant Electircité </a> </li>
+                    <li><a href="#">Etudiant Ferronerie </a> </li>
+                </ul>
+            </li>
+            <li class="defilement"> <a href="#">Nos Cours &ensp; </a>
+                <ul class="sous">
+                    <li> <a href="#"> Mecanique Auto </a> </li>
+                    <li> <a href="#"> Mecanique Moto </a> </li>
+                    <li> <a href="#"> IT (cisco) </a></li>
+                    <li> <a href="#">Plomberie </a> </li>
+                    <li> <a href="#">Ferronerie </a> </li>
+                    <li> <a href="#"> Electricité</a></li>
+                </ul>
+            </li>
+            <li> <a href="#"> Histoire</a></li>
+            <li> <a href="#"> Professeurs</a> </li>
+        </ul>
+    </nav>
+
+    <!-- section de la forme de connexion des etudiants-->
+
+    <h4> Bonjour, si vous etes sur cette page, c'est parce que vous etes un étudiant ou un ancien étudiant du centre
+    </h4>
+    <h6> Connectez-vous pour actualiser ou visualiser votre dossier estudiantin</h6>
+
+    <div class="connecter">
+        <form action="conexion@etudiant.php" method="POST">
+            <label> Option d'étude : </label>
+            <select name="option" id="option">
+                <option value="IT"> Technique Informatique </option>
+                <option value="Telecom"> Telecom</option>
+                <option value="Inf Bureautique"> Informatique Bureautique </option>
+
+                <option value="Mecanique auto" selected="selected"> Mecanique auto </option>
+                <option value="Construction metallique"> Construction metallique </option>
+                <option value="Mecanique moto">Mecanique moto </option>
+
+                <option value="Plomberie"> Plomberie </option>
+                <option value="Refrigerartion"> Refrigerartion </option>
+                <option value="Electricite"> Electricite </option>
+
+            </select>
+
+            <label for="nom">Votre nom d'etudiant :</label>
+            <input type="text" name="Nom" id="nom" required="required" > <br>
+
+            <label for="prenom">Votre Prénom d'etudiant :</label>
+            <input type="text" name="Prenom" id="prenom" required="required"> <br>
+
+            <label for="code">Tapez votre Code étudiant :</label>
+            <input type="password" name="Passcode" id="code" required="required"> <br>
+
+            <input class="submit" type="submit" value="Connecter">
+        </form>
+    </div>
+
+
+</body>
+
+</html>

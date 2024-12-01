@@ -1,0 +1,425 @@
+*
+  {
+      margin: 0px;
+      padding: 0px;
+      font-family: avenir, sans-serif;
+  }
+  
+
+body
+{
+    margin:0px;
+    text-align: auto;
+    font-family: 'Merriweather', serif;
+    size: 100%;
+    
+}
+                        /* Section reserver pour la configuration de la barre d'adresse */
+
+.baradresse
+{
+   background-color: orange; 
+   padding: 0px;
+   width: 100%;
+   margin: 0 auto;
+   top: 0px;
+   height: 19px;
+   
+}
+
+.baradresse li
+{
+    
+    width: 16%;
+    float: left;
+    text-align: center;
+    position: sticky;
+    color: white;
+    
+}
+
+.baradresse ul
+{
+    list-style-type: none;
+}
+
+.baradresse a
+{
+    display: block;
+    text-decoration: none;
+    color: white;
+    border-bottom: 0px solid transparent;
+}
+
+.img1
+{
+    width: 1px;
+    height: 3px;
+}
+                               /* Section de la barre de Logo et de connexion */
+
+.conteneur-flexible
+{
+    width: 100%;
+    background-color:white;
+    text-align: center;
+    height:  auto;
+    justify-content: space-around;    
+}
+
+
+.element-flexible
+{
+    width: 100%;
+    background-color: rgb(22, 20, 172);
+    display: inline;
+    margin: 70px; 
+    height: auto;
+}
+
+
+.logo
+{
+    width: 18%;
+    height: 20%;
+    margin-left: 250px;
+    margin-top:20px;
+}
+
+.cppe
+{
+    width: 70%;
+    color: blue;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+    border-left: 2px solid blue;
+    margin-left: 2px;
+    padding-left: 4px;
+    
+}
+
+.cppe strong
+{
+    text-align: right;
+    font-size: 30px;
+    margin-left: 25px;
+}
+
+.icon-cppe
+{
+    width: 20%;
+    background-color: white;
+    display: inline-block;
+    margin: 0px;
+}
+
+.btn
+{
+    width: 20%;
+    background-color: white;
+    display: inline-block;
+    bottom: 0px;
+}
+
+
+.btn a
+{
+    text-decoration: none;
+}
+
+
+.connect
+{
+    width: 30%;
+    margin:10px 2px;
+    color: blue;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-left: 130px;
+	background-color:orange;
+	border-radius:10px;
+    border:2px solid #ab7d18;
+    padding: 2px 4px;
+    bottom: -5px;
+}
+
+.subscribe
+{
+    width: 30%;
+    margin:10px 2px;
+    color: white;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+    margin-right: 130px;
+    background-color:orange;
+	border-radius:10px;
+    border:2px solid #181aab;
+    padding: 2px 4px;
+    margin-top: -5px;
+}
+
+
+                                    /* section pour  le slide */
+  .slide2{
+    width: auto;
+    height: 625px;
+    margin: 0 auto;
+    background-color: #ededed;
+    background-size: contain;
+    animation: fondu 15s ease-in-out infinite both;
+  }
+
+  @keyframes fondu {
+    0%{background-image: url("slide3.png");}
+    33.33%{background-image: url("slide3.png");}
+    66.67%{background-image: url("slide3.png");}
+    100%{background-image: url("slide3.png");}
+  }
+  .slide2:hover
+  {
+    animation-play-state: paused;
+  }
+
+
+  
+                                        /* section de la barre de navigation */
+  nav
+  {
+      width: 100%;
+      margin: 0 auto;
+      top: 0px;
+      position:sticky;
+      background-color: white;
+      border-bottom: 1px solid orange;
+  }
+
+  nav ul
+  {
+      list-style-type: none;
+  }
+  
+  nav ul li
+  {
+      float: left;
+      width: 16%;
+      text-align:center;
+      position: relative;
+      
+     
+  }
+  
+  nav ul::after
+  {
+      content: "";
+      display: table;
+      clear: both;
+  }
+  
+  
+  
+  nav a
+  {
+      display: block;
+      text-decoration: none;
+      color: rgb(76, 0, 255);
+      border-bottom: 2px solid transparent;
+      padding: 10px 0px;
+      font-weight: 10px;      
+  }
+  
+  .active
+  {
+    background-color: rgb(255, 187, 0);
+    border-width: 2px;
+    height: 14px;
+  }
+
+  nav a:hover
+  {
+      color: orange;
+      border-bottom: 2px solid gold;
+      
+  }
+
+  .sous
+  {
+      display: none;
+      box-shadow: 0px 1px 2px #CCC;
+      background-color: white;
+      position:absolute;
+      width: 100%;
+      z-index: 1000;
+  }
+
+
+   ul li:hover .sous
+    {
+        display: block;
+    }
+
+  .sous li
+  {
+      float: none;
+      width: 100%;
+      text-align: left;
+      border-bottom: none;
+  }
+
+  .sous a
+  {
+      border-bottom:none;
+      padding: 10px;
+  }
+
+  .defilement > a::after
+  {
+      content:"↨";
+      font-size: 12px;
+  }
+
+  .sous a:hover
+  {
+      background-color: rgba(255, 255, 0, 0.034);
+  }
+
+
+                                     /* Section pour l'entete de la forme d'inscription */
+
+  .inscription
+  {
+      width: 25%;
+      margin: 15px auto;
+      text-align:center;    
+  }
+  
+  hr
+  {
+      border: 5px dotted;
+      width: 9%;
+      margin: 5px auto;
+      border-bottom: none;
+      color: orange;
+  }
+
+                                        /*Le debut du formulaire d'inscription */
+
+  .formulaire
+  {
+      background-color: #ab7d18;
+      width: 80%;
+      margin: 50px 0px 100px 120px;
+      border: 38px solid #181aab;
+      padding: 50px 20px 30px 30px;
+  }
+
+  #section1
+  {
+      padding: 10px;
+      margin: 10px 0 20px 30px;
+      display: flex;
+  }
+
+  #section2
+  {
+    padding: 10px 20px;
+    margin: 10px 0 20px 30px;
+  }
+
+  #section3
+  {
+    padding: 10px 20px;
+    margin: 10px 0 20px 30px;
+  }
+
+  #section4
+  {
+    padding: 10px 20px;
+    margin: 10px 0 20px 30px;
+  }
+
+  #section1:hover,  #section2:hover,  #section3:hover, #section4:hover
+  {
+      box-shadow: 5px 6px 5px burlywood;
+  }
+
+  #section1 select
+  {
+      width: 300px;
+      height: 30px;
+      margin: 0px 2px;
+  }
+
+
+  #section2 input, select
+  {
+      width: 300px;
+      height: 30px;
+      margin: 0px 2px;
+  }
+
+  #section2 label
+  {
+    width: 300px;
+    padding: 10px 0 15px 40px;
+    display: inline-block;
+  }
+
+  #section3 input
+  {
+      width: 300px;
+      height: 30px;
+      margin: 0px 2px;
+  }
+
+  #section3 label
+  {
+    width: 300px;
+    padding: 10px 0 15px 40px;
+    display: inline-block;
+  }
+
+  #section4 input
+  {
+      width: 300px;
+      height: 30px;
+      margin: 0px 2px;
+  }
+
+  #section4 label
+  {
+    width: 300px;
+    padding: 10px 0 15px 40px;
+    display: inline-block;
+  }
+
+  legend
+  {
+      font-weight: bold;
+      font-size: 18px;
+      color: #444;
+  }
+
+  .submit
+  {
+      float: right;
+      width: 100px;
+      height: 30px;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+
+  .test
+  {
+      text-align: center;
+      justify-content:space-between;
+  }
+
+  .submit:hover
+  {
+      box-shadow: 0px 0px 4px;
+      background-color: rgb(105, 105, 228);
+  }

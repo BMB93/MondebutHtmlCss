@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title> Accueil</title>
+    <link rel="icon" href="rep12.jpg">
+    <link rel="stylesheet" href="css/admission.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Sacramento&display=swap">
+</head>
+
+<body>
+
+    <!-- Dans cette section il y a la barre d'entete-->
+    <div class="baradresse">
+        <ul>
+            <li> <img class="img1" src="img/location.png" alt="symbole de location"> </li>
+            <li>
+                <p> Bois patate, ruelle cameau #423 </p>
+            </li>
+            <li> <img class="img1" src="img/telephone.png" alt="symbole de tlf"> </li>
+            <li>
+                <p> (+509) 3454-6532 / 4265-7382 </p>
+            </li>
+            <li> <img class="img1" src="img/email.png" alt="symbole boite email"> </li>
+            <li> <a href="mailto:reception@cppe.com"> reception@cppe </a></li>
+        </ul>
+    </div>
+    <!-- Dans cette section il y a la barre de logo et de connexion-->
+
+
+    <div class="conteneur-flexible ligne">
+
+        <div class="icon-cppe"><img class="logo" src="img/logo cppe.png" alt="le logo"></div>
+        <div class="icon-cppe">
+            <p class="cppe"> <strong>CPPE</strong> <br> Centre Pilote de <br> Petion Estinvil</p>
+        </div>
+
+        <div class="btn"> <a class="connect" href="connexion.html">Se connecter</a></div>
+        <div class="btn"><a class="subscribe" href="admission.html">S'inscrire</a></div>
+
+    </div>
+
+
+
+    <!-- Dans cette section il y a l'espace pour faire joue les slides-->
+
+    <div class="slide2">
+
+    </div>
+
+    <!-- Dans cette section il y a la barre de navigation-->
+
+    <nav>
+        <ul>
+            <li> <a href="index.html"> Accueil </a> </li>
+            <li> <a class="active" href="#">Admission </a></li>
+            <li class="defilement"> <a href="#">Gallerie &ensp;</a>
+                <ul class="sous">
+                    <li><a href="#"> Etudiant IT</a></li>
+                    <li><a href="#">Etudiant Mecanique </a> </li>
+                    <li><a href="#"> Etudiant Plomberie </a> </li>
+                    <li><a href="#"> Etudiant Electircité </a> </li>
+                    <li><a href="#">Etudiant Ferronerie </a> </li>
+                </ul>
+            </li>
+            <li class="defilement"> <a href="#">Nos Cours &ensp; </a>
+                <ul class="sous">
+                    <li> <a href="#"> Mecanique Auto </a> </li>
+                    <li> <a href="#"> Mecanique Moto </a> </li>
+                    <li> <a href="#"> IT (cisco) </a></li>
+                    <li> <a href="#">Plomberie </a> </li>
+                    <li> <a href="#">Ferronerie </a> </li>
+                    <li> <a href="#"> Electricité</a></li>
+                </ul>
+            </li>
+            <li> <a href="#"> Histoire</a></li>
+            <li> <a href="#"> Professeurs</a> </li>
+        </ul>
+    </nav>
+
+
+
+    <div class="inscription">
+        <h1> INSCRIPTION </h1>
+    </div>
+
+    <hr>
+
+    <!-- La creation de formulaire d'inscription -->
+    <div class="formulaire">
+        <form action="inscription.php" method="POST">
+
+            <fieldset id="section1">
+                <legend> OPTION CHOISIE </legend>
+                <select name="option" id="option">
+                    <optgroup label="Branche informatique">
+                        <option value="IT"> Technique Informatique </option>
+                        <option value="Telecom"> Telecom</option>
+                        <option value="Inf Bureautique"> Informatique Bureautique </option>
+                    </optgroup>
+                    <optgroup label="Branche dur">
+                        <option value="Mecanique auto" selected="selected"> Mecanique auto </option>
+                        <option value="Construction metallique"> Construction metallique </option>
+                        <option value="Mecanique moto">Mecanique moto </option>
+                    </optgroup>
+                    <optgroup label="Branche bricolage">
+                        <option value="Plomberie"> Plomberie </option>
+                        <option value="Refrigerartion"> Refrigerartion </option>
+                        <option value="Electricite"> Electricite </option>
+                    </optgroup>
+                </select> <br> <br>
+            </fieldset>
+
+            <fieldset id="section2">
+                <legend> INFORMATIONS PERSONNELLES </legend> <br>
+                <label for="nom">Votre nom</label>
+                <input type="text" name="Nom" id="nom" placeholder="Ex : BELLONY" autocomplete="on" required="required">
+                <br>
+
+                <label for="prenom">Votre prénom </label>
+                <input type="text" name="Prenom" id="prenom" placeholder="Ex: Bernard" autocomplete="on"
+                    required="required"> <br>
+
+                <label for="Datenaiss"> Votre date de Naissance </label>
+                <input type="date" name="Date Naissance" id="Datenaiss" placeholder="" autocomplete="on"
+                    required="required"> <br>
+
+                <label for="Lieunaiss"> Lieu de Naissance</label>
+                <input type="text" name="Lieu de naissance" id="Lieunaiss" placeholder="" autocomplete="on"
+                    required="required"><br>
+
+                <label> Departement de Naissance: </label>
+                <select name="departement">
+                    <option value="Ouest"> Ouest </option>
+                    <option value="Nippes"> Nippes </option>
+                    <option value="Sud"> Sud </option>
+                    <option value="Nord"> Nord </option>
+                    <option value="Latibonite"> Latibonite</option>
+                    <option value="Sud-Est"> Sud-Est </option>
+                    <option value="Centre"> Centre </option>
+                    <option value="Grand'Anse"> Grand'Anse </option>
+                    <option value="Nord-Ouest"> Nord-Ouest </option>
+                    <option value="Nord-Est"> Nord-Est </option>
+                </select> <br>
+
+                <label for="photo"> Votre Photo: </label>
+                <input type="file" name="user-photo" id="photo"> <br>
+
+
+                <label for="sexe"> Sexe: </label>
+                <input type="radio" name="genre" value="Feminin" id="sexe" checked="checked"> Feminin
+                <input type="radio" name="genre" value="Masculin"> Masculin <br>
+
+                <label for="statut"> Etat civil: </label>
+                <select name="Etat Civil" id="statut">
+                    <option value="Marié(e)"> Marié(e)</option>
+                    <option value="Célibataire"> Célibataire </option>
+                    <option value="Divorcé(e)"> Divorcé(e)</option>
+                </select> <br>
+
+                <label for="identite"> NIF / CIN: </label>
+                <input type="text" name="usernmane" size="25" placeholder="NIF ou CIN" id="identite"
+                    required="required"> <br>
+            </fieldset>
+
+            <fieldset id="section3">
+                <legend> DETAILS DE CONTACT </legend>
+                <label for="email"> Email : </label>
+                <input type="email" name="email" id="email"> <br>
+                <label for="tel"> Téléphone : </label>
+                <input type="tel" name="Tel" id="tel"> <br>
+                <label for="Whats"> WhatsApp : </label>
+                <input type="tel" name="WhatsApp" id="Whats"> <br />
+            </fieldset>
+
+
+            <fieldset id="section4">
+                <legend> INFORMATIONS ACCADEMIQUES </legend>
+
+                <label for="niveau"> Niveau d'étude : </label> 
+                <select name="Niveau d'etude" id="niveau">
+                    <option value="secondaire"> Secondaire</option>
+                    <option value="universitaire"> Universitaire </option>
+                </select> <br>
+
+                <label for="periode"> Periode d'étude : </label> 
+                <input type="number" name="periode d'etude" size="25" placeholder="Ex: 2003 - 2010" id="periode"> <br>
+
+                <label for="etablissement"> Le nom du dernier etablissement fréquenté : </label>
+                <input type="text" name="etablissement" id="etablissement"> <br>
+
+                <label> avez-vous deja une formation technique /professionnelle? : </label>
+                <input type="radio" name="choix" value="Oui"> Oui
+                <input type="radio" name="choix" value="Non"> Non <br> <br> <br>
+
+            </fieldset>
+
+            <input class="certifie" type="checkbox" name="choix" value="Oui"> Je certifie que ces informations fournies ci-dessus sont
+            correctes et complètes <br> <br>
+
+            <label for="test"> 2 + 5 = </label>
+            <input class="test" type="number" id="test"> <br> <br>
+
+            <input class="submit" type="submit" value="Envoyer">
+
+
+
+        </form>
+    </div>
+
+</body>
+
+</html>
